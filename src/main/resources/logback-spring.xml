@@ -1,0 +1,40 @@
+<configuration debug="false">
+
+   <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+       <layout class="ch.qos.logback.classic.PatternLayout">
+           <Pattern>
+               %d{ISO8601} %highlight(%-5level) [%blue(%t)] %yellow(%C{5}): %msg%n%throwable
+           </Pattern>
+       </layout>
+   </appender>
+
+    <appender name="servicos" class="ch.qos.logback.core.FileAppender">
+        <file>services.log</file>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{ISO8601} %-5level [%t] %C{5}: %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+
+    <appender name="repository" class="ch.qos.logback.core.FileAppender">
+        <file>repository.log</file>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{ISO8601} %-5level [%t] %C{5}: %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+
+    <logger name="com.senai.devinhouse.logging.service" level="debug" additivity="false">
+        <appender-ref ref="servicos" />
+    </logger>
+
+    <logger name="com.senai.devinhouse.logging.repository" level="debug" additivity="false">
+        <appender-ref ref="repository" />
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="Console" />
+    </root>
+</configuration>

@@ -1,0 +1,8 @@
+2022-02-22 20:52:17,182 INFO  [main] c.s.d.l.s.MeuServico: Avaliando ambiente necessário
+2022-02-22 20:52:17,187 DEBUG [main] c.s.d.l.s.MeuServico: Verificando mémoria disponivel: 232760832
+2022-02-22 20:52:17,188 DEBUG [main] c.s.d.l.s.MeuServico: Avaliando disponibilidade de processadores
+2022-02-22 20:52:17,188 DEBUG [main] c.s.d.l.s.MeuServico2: Inicializando Serviço 2
+2022-02-22 20:54:09,041 INFO  [main] c.s.d.l.s.MeuServico: Avaliando ambiente necessário
+2022-02-22 20:54:09,046 DEBUG [main] c.s.d.l.s.MeuServico: Verificando mémoria disponivel: 233686696
+2022-02-22 20:54:09,047 DEBUG [main] c.s.d.l.s.MeuServico: Avaliando disponibilidade de processadores
+2022-02-22 20:54:09,047 DEBUG [main] c.s.d.l.s.MeuServico2: Inicializando Serviço 2
